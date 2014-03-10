@@ -81,7 +81,7 @@ static  int  parse_file(const   char   * section,
 	{
          // find the section
 		if(( 0 == i || isnewline(p[i - 1 ])) && isleftbarce(p[i]))
-        {
+		{
 			int  section_start = i + 1 ;
 
              // find the ']'
@@ -92,11 +92,11 @@ static  int  parse_file(const   char   * section,
 
             if( 0 == strncmp(p + section_start,section, i - section_start))
             {
-				int  newline_start = 0;
+				int newline_start = 0;
 				i++;
 
                  // Skip over space char after ']'
-                while (isspace(p[i]))
+                while(isspace(p[i]))
                 {
 					i++;
                 }
@@ -105,7 +105,7 @@ static  int  parse_file(const   char   * section,
                 *sec_s = section_start;
                 *sec_e = i;
 
-                while( !(isnewline(p[i - 1 ]) && isleftbarce(p[i])) && !isend(p[i]))
+                while(!(isnewline(p[i - 1 ]) && isleftbarce(p[i])) && !isend(p[i]))
                 {
 					int  j = 0 ;
                      // get a new line
@@ -129,11 +129,10 @@ static  int  parse_file(const   char   * section,
                                 if(strncmp(key,p + newline_start,j - newline_start) == 0)
                                 {
                                      // find the key ok
-                                	* key_s = newline_start;
-                                    * key_e = j - 1;
-
-                                    * value_s = j + 1;
-                                    * value_e = i;
+									* key_s = newline_start;
+									* key_e = j - 1;
+									* value_s = j + 1;
+									* value_e = i;
 									if(*value_e == *value_s)
 									{
 										return 0;
@@ -165,15 +164,14 @@ int  read_profile_string(
 												 char  * default_value,
                          const   char   * buf)
 {
+
 	int  sec_s,sec_e,key_s,key_e, value_s, value_e;
-
 	char temp[BUF_SIZE];
-    assert(section != NULL && strlen(section));
-    assert(key != NULL && strlen(key));
-    assert(value != NULL);
+	assert(section != NULL && strlen(section));
+	assert(key != NULL && strlen(key));
+	assert(value != NULL);
 	assert(default_value != NULL);
-    assert(buf != NULL && strlen(key));
-
+	assert(buf != NULL && strlen(key));
 
 	memset(temp, 0, sizeof(temp));
 	if (!parse_file(section, key, buf, &sec_s, &sec_e, &key_s, &key_e, &value_s, &value_e))
