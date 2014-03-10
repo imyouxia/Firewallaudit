@@ -72,14 +72,13 @@ static  int  parse_file(const   char   * section,
 {
 	const   char   * p  =  buf;
 	int  i = 0 ;
-
-    assert(buf != NULL);
-    assert(section  !=  NULL  &&  strlen(section));
-    assert(key  !=  NULL  &&  strlen(key));
+	assert(buf != NULL);
+	assert(section  !=  NULL  &&  strlen(section));
+	assert(key  !=  NULL  &&  strlen(key));
 	* sec_e  =   * sec_s  =   * key_e  =   * key_s  =   * value_s  =   * value_e  =   - 1 ;
 
 	while(!isend(p[i]))
-    {
+	{
          // find the section
 		if(( 0 == i || isnewline(p[i - 1 ])) && isleftbarce(p[i]))
         {
