@@ -86,12 +86,12 @@ static  int  parse_file(const   char   * section,
 
              // find the ']'
 			do
-            {
-				i ++;
-            }while( !isrightbrace(p[i]) && !isend(p[i]));
-
-            if( 0 == strncmp(p + section_start,section, i - section_start))
-            {
+			{
+				i++;
+			}while(!isrightbrace(p[i]) && !isend(p[i]));
+		
+			if( 0 == strncmp(p + section_start,section, i - section_start))
+			{
 				int newline_start = 0;
 				i++;
 
@@ -141,14 +141,14 @@ static  int  parse_file(const   char   * section,
 									{
 										return 1 ;
 									}
-                                }
-                            }
-                         }
-                     }
+								}
+							}
+						}
+					}
                     i++;
-                }
-            }
-        }
+				}
+			}
+		}
         else
         {
         	i++;
