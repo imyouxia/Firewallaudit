@@ -12,6 +12,7 @@
 #define  LEFT_BRACE '['
 #define  RIGHT_BRACE ']'
 	
+
 int load_ini_file(const  char * file,  char * buf)
 {
 	int  i = 0 ;
