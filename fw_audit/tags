@@ -1,0 +1,578 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ADD_NEW_TASK	task_queue.c	11;"	d	file:
+AE_ALL_EVENTS	ae.h	13;"	d
+AE_DONT_WAIT	ae.h	14;"	d
+AE_ERR	ae.h	5;"	d
+AE_FILE_EVENTS	ae.h	11;"	d
+AE_NOMORE	ae.h	16;"	d
+AE_NONE	ae.h	7;"	d
+AE_OK	ae.h	4;"	d
+AE_READABLE	ae.h	8;"	d
+AE_TIME_EVENTS	ae.h	12;"	d
+AE_WRITABLE	ae.h	9;"	d
+AUTO_OPTIMIZE	task.h	/^	AUTO_OPTIMIZE				\/\/ Need to be transfered$/;"	e	enum:task_type
+BUF_SIZE	inifile.h	2;"	d
+DICT_ERR	dict.h	7;"	d
+DICT_HT_INITIAL_SIZE	dict.h	59;"	d
+DICT_NOTUSED	dict.h	10;"	d
+DICT_OK	dict.h	6;"	d
+FAIL	constant.h	5;"	d
+FETCH_CFG	task.h	/^	FETCH_CFG = 1,			\/\/ Need to be transfered$/;"	e	enum:task_type
+FIFO_PATH	main.c	26;"	d	file:
+FILE_MODE	main.c	28;"	d	file:
+FOREVER	task_queue.h	/^	FOREVER = -1,			\/\/表示该任务不停地执行$/;"	e	enum:execute_type
+HAVE_ARPA_INET_H	libssh2_config.h	5;"	d
+HAVE_DLFCN_H	libssh2_config.h	11;"	d
+HAVE_ERRNO_H	libssh2_config.h	14;"	d
+HAVE_FCNTL_H	libssh2_config.h	17;"	d
+HAVE_GETTIMEOFDAY	libssh2_config.h	23;"	d
+HAVE_INTTYPES_H	libssh2_config.h	26;"	d
+HAVE_MEMORY_H	libssh2_config.h	38;"	d
+HAVE_NETINET_IN_H	libssh2_config.h	41;"	d
+HAVE_O_NONBLOCK	libssh2_config.h	44;"	d
+HAVE_SELECT	libssh2_config.h	50;"	d
+HAVE_STDINT_H	libssh2_config.h	56;"	d
+HAVE_STDIO_H	libssh2_config.h	59;"	d
+HAVE_STDLIB_H	libssh2_config.h	62;"	d
+HAVE_STRINGS_H	libssh2_config.h	65;"	d
+HAVE_STRING_H	libssh2_config.h	68;"	d
+HAVE_SYS_IOCTL_H	libssh2_config.h	71;"	d
+HAVE_SYS_SELECT_H	libssh2_config.h	74;"	d
+HAVE_SYS_SOCKET_H	libssh2_config.h	77;"	d
+HAVE_SYS_STAT_H	libssh2_config.h	80;"	d
+HAVE_SYS_TIME_H	libssh2_config.h	83;"	d
+HAVE_SYS_TYPES_H	libssh2_config.h	86;"	d
+HAVE_SYS_UIO_H	libssh2_config.h	89;"	d
+HAVE_UNISTD_H	libssh2_config.h	92;"	d
+HOUR_SECOND	main.c	29;"	d	file:
+HOUR_SECONDS	task_queue.h	10;"	d
+INIT_LIST_HEAD	list.h	29;"	d
+INTERVAL	task_queue.h	/^	INTERVAL					\/\/表示该任务按时间间隔执行$/;"	e	enum:execute_type
+IPV4_ADDR_LENGTH	net.h	10;"	d
+LEFT_BRACE	inifile.c	12;"	d	file:
+LIBSSH2_DH_GEX_NEW	libssh2_config.h	98;"	d
+LIBSSH2_HAVE_ZLIB	libssh2_config.h	101;"	d
+LIST_HEAD	list.h	26;"	d
+LIST_HEAD_INIT	list.h	24;"	d
+MAX_EVENTS	task_queue.h	9;"	d
+MAX_FDS	task_queue.h	8;"	d
+MAX_FILE_SIZE	inifile.c	10;"	d	file:
+MAX_FILE_SIZE	inifile.h	1;"	d
+MULTI_AUDIT	task.h	/^	MULTI_AUDIT,$/;"	e	enum:task_type
+NET_ANALYSE	task.h	/^	NET_ANALYSE,$/;"	e	enum:task_type
+NET_CONNECT_NONBLOCK	net.h	8;"	d
+NET_CONNECT_NONE	net.h	7;"	d
+NET_ERR	net.h	4;"	d
+NET_OK	net.h	5;"	d
+OK	constant.h	4;"	d
+ONCE	task_queue.h	/^	ONCE,							\/\/表示该任务只执行一次$/;"	e	enum:execute_type
+PACKAGE	libssh2_config.h	110;"	d
+PACKAGE_BUGREPORT	libssh2_config.h	113;"	d
+PACKAGE_NAME	libssh2_config.h	116;"	d
+PACKAGE_STRING	libssh2_config.h	119;"	d
+PACKAGE_TARNAME	libssh2_config.h	122;"	d
+PACKAGE_VERSION	libssh2_config.h	125;"	d
+PARALLEL	constant.h	7;"	d
+RD_DB	db_mysql.h	6;"	d
+RIGHT_BRACE	inifile.c	13;"	d	file:
+RW_DB	db_mysql.h	7;"	d
+SCHEDULE_THREAD	work_thread.h	/^	SCHEDULE_THREAD,	\/\/任务调度(分发)线程$/;"	e	enum:thread_type
+SERIAL	constant.h	8;"	d
+SINGLE_AUDIT	task.h	/^	SINGLE_AUDIT,$/;"	e	enum:task_type
+SQL_LENGTH	db_mysql.c	13;"	d	file:
+STDC_HEADERS	libssh2_config.h	128;"	d
+TYPE_NUM	task.h	7;"	d
+VERSION	libssh2_config.h	131;"	d
+WATCH_THREAD	work_thread.h	/^	WATCH_THREAD			\/\/待用$/;"	e	enum:thread_type
+WORDS_BIGENDIAN	libssh2_config.h	136;"	d
+WORK_HOME	constant.h	10;"	d
+WORK_THREAD	work_thread.h	/^	WORK_THREAD = 0,	\/\/任务工作(执行)线程$/;"	e	enum:thread_type
+__AE_H	ae.h	2;"	d
+__DICT_H	dict.h	4;"	d
+__INCLUDE_CONSTANT_H	constant.h	2;"	d
+__INCLUDE_DB_MYSQL_H	db_mysql.h	2;"	d
+__INCLUDE_REDIS_H	redis.h	2;"	d
+__INCLUDE_TASK_H	task.h	2;"	d
+__INCLUDE_TASK_QUEUE_H	task_queue.h	2;"	d
+__INCLUDE_THREAD_H	work_thread.h	2;"	d
+__LIST_H	list.h	2;"	d
+__NET_H	net.h	2;"	d
+__VIA_SSH2_H	via_ssh2.h	2;"	d
+__list_add	list.h	/^static inline void __list_add(struct list_head *new,$/;"	f
+__list_del	list.h	/^static inline void __list_del(struct list_head *prev, struct list_head *next)$/;"	f
+__list_splice	list.h	/^static inline void __list_splice(struct list_head *list,$/;"	f
+__mysql_connect	db_mysql.c	/^static int __mysql_connect(void)$/;"	f	file:
+__ops_mysql_exec_modify	db_mysql.c	/^static int __ops_mysql_exec_modify(const char *sql)$/;"	f	file:
+_dictClear	dict.c	/^int _dictClear(dict *d, dictht *ht)$/;"	f
+_dictExpandIfNeeded	dict.c	/^static int _dictExpandIfNeeded(dict *d)$/;"	f	file:
+_dictInit	dict.c	/^int _dictInit(dict *d, dictType *type,$/;"	f
+_dictKeyIndex	dict.c	/^static int _dictKeyIndex(dict *d, const void *key)$/;"	f	file:
+_dictNextPower	dict.c	/^static unsigned long _dictNextPower(unsigned long size)$/;"	f	file:
+_dictRehashStep	dict.c	/^static void _dictRehashStep(dict *d) {$/;"	f	file:
+_dictReset	dict.c	/^static void _dictReset(dictht *ht)$/;"	f	file:
+_list_add	list.h	/^static inline void _list_add(struct list_head *new, struct list_head *head)$/;"	f
+_normal_mode	via_ssh2.c	/^static int _normal_mode(void)$/;"	f	file:
+_raw_mode	via_ssh2.c	/^static int _raw_mode(void)$/;"	f	file:
+_rfds	ae_select.c	/^	fd_set _rfds, _wfds;$/;"	m	struct:ae_api_state	file:
+_saved_tio	via_ssh2.c	/^struct termios _saved_tio;$/;"	v	typeref:struct:termios
+_wfds	ae_select.c	/^	fd_set _rfds, _wfds;$/;"	m	struct:ae_api_state	file:
+add_cfg_fetch_task	task_retransmit.c	/^static int add_cfg_fetch_task(ae_event_loop * ev_loop, long long id, void * client_data)$/;"	f	file:
+add_single_audit_task	task_single_audit.c	/^static int add_single_audit_task(ae_event_loop * ev_loop, long long id, void * client_data)$/;"	f	file:
+add_task	task_queue.c	/^static void add_task(worker_task_queue_t * tq, task_node_t * tn)$/;"	f	file:
+add_task_with_notify	task_queue.c	/^void add_task_with_notify(worker_task_queue_t * tq, task_node_t * tn)$/;"	f
+add_task_without_notify	task_queue.c	/^void add_task_without_notify(worker_task_queue_t * tq, task_node_t * tn)$/;"	f
+ae_add_milliseconds_to_now	ae.c	/^static void ae_add_milliseconds_to_now(long long milliseconds, long * sec, long * ms)$/;"	f	file:
+ae_api_add_event	ae_select.c	/^static int ae_api_add_event(ae_event_loop * ev_loop, int fd, int mask)$/;"	f	file:
+ae_api_create	ae_select.c	/^static int ae_api_create(ae_event_loop * ev_loop)$/;"	f	file:
+ae_api_del_event	ae_select.c	/^static void ae_api_del_event(ae_event_loop * ev_loop, int fd, int mask)$/;"	f	file:
+ae_api_free	ae_select.c	/^static void ae_api_free(ae_event_loop * ev_loop)$/;"	f	file:
+ae_api_name	ae_select.c	/^static char * ae_api_name(void)$/;"	f	file:
+ae_api_poll	ae_select.c	/^static int ae_api_poll(ae_event_loop * ev_loop, struct timeval * tvp)$/;"	f	file:
+ae_api_state	ae_select.c	/^typedef struct ae_api_state {$/;"	s	file:
+ae_api_state	ae_select.c	/^} ae_api_state;$/;"	t	typeref:struct:ae_api_state	file:
+ae_before_sleep_func	ae.h	/^typedef void ae_before_sleep_func(struct ae_event_loop * event_loop);$/;"	t
+ae_create_event_loop	ae.c	/^ae_event_loop * ae_create_event_loop(int setsize)$/;"	f
+ae_create_file_event	ae.c	/^int ae_create_file_event(ae_event_loop * ev_loop, int fd, int mask, $/;"	f
+ae_create_time_event	ae.c	/^long long ae_create_time_event(ae_event_loop * ev_loop, long long milliseconds, ae_time_func * time_func, void * client_data, ae_event_finalizer_func * finalizer_func)$/;"	f
+ae_delete_event_loop	ae.c	/^void ae_delete_event_loop(ae_event_loop * ev_loop)$/;"	f
+ae_delete_file_event	ae.c	/^void ae_delete_file_event(ae_event_loop * ev_loop, int fd, int mask)$/;"	f
+ae_delete_time_event	ae.c	/^int ae_delete_time_event(ae_event_loop * ev_loop, long long id)$/;"	f
+ae_event_finalizer_func	ae.h	/^typedef void ae_event_finalizer_func(struct ae_event_loop * event_loop, $/;"	t
+ae_event_loop	ae.h	/^typedef struct ae_event_loop {$/;"	s
+ae_event_loop	ae.h	/^} ae_event_loop;$/;"	t	typeref:struct:ae_event_loop
+ae_file_event	ae.h	/^typedef struct ae_file_event {$/;"	s
+ae_file_event	ae.h	/^} ae_file_event;$/;"	t	typeref:struct:ae_file_event
+ae_file_func	ae.h	/^typedef void ae_file_func(struct ae_event_loop * event_loop, $/;"	t
+ae_fired_event	ae.h	/^typedef struct ae_fired_event {$/;"	s
+ae_fired_event	ae.h	/^} ae_fired_event;$/;"	t	typeref:struct:ae_fired_event
+ae_get_api_name	ae.c	/^char * ae_get_api_name(void)$/;"	f
+ae_get_file_events	ae.c	/^int ae_get_file_events(ae_event_loop * ev_loop, int fd)$/;"	f
+ae_get_time	ae.c	/^static void ae_get_time(long * seconds, long * milliseconds)$/;"	f	file:
+ae_loop_init	main.c	/^static ae_event_loop * ae_loop_init(void)$/;"	f	file:
+ae_main	ae.c	/^void ae_main(ae_event_loop * ev_loop)$/;"	f
+ae_process_events	ae.c	/^int ae_process_events(ae_event_loop * ev_loop, int flags)$/;"	f
+ae_search_nearest_timer	ae.c	/^static ae_time_event * ae_search_nearest_timer(ae_event_loop * ev_loop)$/;"	f	file:
+ae_set_before_sleep_func	ae.c	/^void ae_set_before_sleep_func(ae_event_loop * ev_loop, ae_before_sleep_func * beforesleep)$/;"	f
+ae_stop	ae.c	/^void ae_stop(ae_event_loop * ev_loop)$/;"	f
+ae_time_event	ae.h	/^typedef struct ae_time_event {$/;"	s
+ae_time_event	ae.h	/^} ae_time_event;$/;"	t	typeref:struct:ae_time_event
+ae_time_func	ae.h	/^typedef int ae_time_func(struct ae_event_loop * event_loop, $/;"	t
+ae_wait	ae.c	/^int ae_wait(int fd, int mask, long long milliseconds)$/;"	f
+api_data	ae.h	/^	void * api_data;$/;"	m	struct:ae_event_loop
+audit_id	task.h	/^	char * audit_id;$/;"	m	struct:single_audit_info
+audit_task_id	task.h	/^	int audit_task_id;$/;"	m	struct:single_audit_info
+authenticate_ssh2_conn	via_ssh2.c	/^static int authenticate_ssh2_conn(ssh2_conn * conn, ssh2_dst_info * info)$/;"	f	file:
+auto_optimize_via_pseudoterm	via_ssh2.c	/^int auto_optimize_via_pseudoterm(ssh2_conn * conn, const char * cmdline)$/;"	f
+beforesleep	ae.h	/^	ae_before_sleep_func * beforesleep;$/;"	m	struct:ae_event_loop
+brand	task.h	/^	char * brand;$/;"	m	struct:single_audit_info
+cJSON	cjson.h	/^typedef struct cJSON {$/;"	s
+cJSON	cjson.h	/^} cJSON;$/;"	t	typeref:struct:cJSON
+cJSON_AddBoolToObject	cjson.h	108;"	d
+cJSON_AddFalseToObject	cjson.h	107;"	d
+cJSON_AddItemReferenceToArray	cjson.c	/^void	cJSON_AddItemReferenceToArray(cJSON *array, cJSON *item)						{cJSON_AddItemToArray(array,create_reference(item));}$/;"	f
+cJSON_AddItemReferenceToObject	cjson.c	/^void	cJSON_AddItemReferenceToObject(cJSON *object,const char *string,cJSON *item)	{cJSON_AddItemToObject(object,string,create_reference(item));}$/;"	f
+cJSON_AddItemToArray	cjson.c	/^void   cJSON_AddItemToArray(cJSON *array, cJSON *item)						{cJSON *c=array->child;if (!item) return; if (!c) {array->child=item;} else {while (c && c->next) c=c->next; suffix_object(c,item);}}$/;"	f
+cJSON_AddItemToObject	cjson.c	/^void   cJSON_AddItemToObject(cJSON *object,const char *string,cJSON *item)	{if (!item) return; if (item->string) cJSON_free(item->string);item->string=cJSON_strdup(string);cJSON_AddItemToArray(object,item);}$/;"	f
+cJSON_AddNullToObject	cjson.h	105;"	d
+cJSON_AddNumberToObject	cjson.h	109;"	d
+cJSON_AddStringToObject	cjson.h	110;"	d
+cJSON_AddTrueToObject	cjson.h	106;"	d
+cJSON_Array	cjson.h	15;"	d
+cJSON_CreateArray	cjson.c	/^cJSON *cJSON_CreateArray(void)					{cJSON *item=cJSON_New_Item();if(item)item->type=cJSON_Array;return item;}$/;"	f
+cJSON_CreateBool	cjson.c	/^cJSON *cJSON_CreateBool(int b)					{cJSON *item=cJSON_New_Item();if(item)item->type=b?cJSON_True:cJSON_False;return item;}$/;"	f
+cJSON_CreateDoubleArray	cjson.c	/^cJSON *cJSON_CreateDoubleArray(double *numbers,int count)		{int i;cJSON *n=0,*p=0,*a=cJSON_CreateArray();for(i=0;a && i<count;i++){n=cJSON_CreateNumber(numbers[i]);if(!i)a->child=n;else suffix_object(p,n);p=n;}return a;}$/;"	f
+cJSON_CreateFalse	cjson.c	/^cJSON *cJSON_CreateFalse(void)					{cJSON *item=cJSON_New_Item();if(item)item->type=cJSON_False;return item;}$/;"	f
+cJSON_CreateFloatArray	cjson.c	/^cJSON *cJSON_CreateFloatArray(float *numbers,int count)			{int i;cJSON *n=0,*p=0,*a=cJSON_CreateArray();for(i=0;a && i<count;i++){n=cJSON_CreateNumber(numbers[i]);if(!i)a->child=n;else suffix_object(p,n);p=n;}return a;}$/;"	f
+cJSON_CreateIntArray	cjson.c	/^cJSON *cJSON_CreateIntArray(int *numbers,int count)				{int i;cJSON *n=0,*p=0,*a=cJSON_CreateArray();for(i=0;a && i<count;i++){n=cJSON_CreateNumber(numbers[i]);if(!i)a->child=n;else suffix_object(p,n);p=n;}return a;}$/;"	f
+cJSON_CreateNull	cjson.c	/^cJSON *cJSON_CreateNull(void)					{cJSON *item=cJSON_New_Item();if(item)item->type=cJSON_NULL;return item;}$/;"	f
+cJSON_CreateNumber	cjson.c	/^cJSON *cJSON_CreateNumber(double num)			{cJSON *item=cJSON_New_Item();if(item){item->type=cJSON_Number;item->valuedouble=num;item->valueint=(int)num;}return item;}$/;"	f
+cJSON_CreateObject	cjson.c	/^cJSON *cJSON_CreateObject(void)					{cJSON *item=cJSON_New_Item();if(item)item->type=cJSON_Object;return item;}$/;"	f
+cJSON_CreateString	cjson.c	/^cJSON *cJSON_CreateString(const char *string)	{cJSON *item=cJSON_New_Item();if(item){item->type=cJSON_String;item->valuestring=cJSON_strdup(string);}return item;}$/;"	f
+cJSON_CreateStringArray	cjson.c	/^cJSON *cJSON_CreateStringArray(const char **strings,int count)	{int i;cJSON *n=0,*p=0,*a=cJSON_CreateArray();for(i=0;a && i<count;i++){n=cJSON_CreateString(strings[i]);if(!i)a->child=n;else suffix_object(p,n);p=n;}return a;}$/;"	f
+cJSON_CreateTrue	cjson.c	/^cJSON *cJSON_CreateTrue(void)					{cJSON *item=cJSON_New_Item();if(item)item->type=cJSON_True;return item;}$/;"	f
+cJSON_Delete	cjson.c	/^void cJSON_Delete(cJSON *c)$/;"	f
+cJSON_DeleteItemFromArray	cjson.c	/^void   cJSON_DeleteItemFromArray(cJSON *array,int which)			{cJSON_Delete(cJSON_DetachItemFromArray(array,which));}$/;"	f
+cJSON_DeleteItemFromObject	cjson.c	/^void   cJSON_DeleteItemFromObject(cJSON *object,const char *string) {cJSON_Delete(cJSON_DetachItemFromObject(object,string));}$/;"	f
+cJSON_DetachItemFromArray	cjson.c	/^cJSON *cJSON_DetachItemFromArray(cJSON *array,int which)			{cJSON *c=array->child;while (c && which>0) c=c->next,which--;if (!c) return 0;$/;"	f
+cJSON_DetachItemFromObject	cjson.c	/^cJSON *cJSON_DetachItemFromObject(cJSON *object,const char *string) {int i=0;cJSON *c=object->child;while (c && cJSON_strcasecmp(c->string,string)) i++,c=c->next;if (c) return cJSON_DetachItemFromArray(object,i);return 0;}$/;"	f
+cJSON_Duplicate	cjson.c	/^cJSON *cJSON_Duplicate(cJSON *item,int recurse)$/;"	f
+cJSON_False	cjson.h	10;"	d
+cJSON_GetArrayItem	cjson.c	/^cJSON *cJSON_GetArrayItem(cJSON *array,int item)				{cJSON *c=array->child;  while (c && item>0) item--,c=c->next; return c;}$/;"	f
+cJSON_GetArraySize	cjson.c	/^int    cJSON_GetArraySize(cJSON *array)							{cJSON *c=array->child;int i=0;while(c)i++,c=c->next;return i;}$/;"	f
+cJSON_GetErrorPtr	cjson.c	/^const char *cJSON_GetErrorPtr(void) {return ep;}$/;"	f
+cJSON_GetObjectItem	cjson.c	/^cJSON *cJSON_GetObjectItem(cJSON *object,const char *string)	{cJSON *c=object->child; while (c && cJSON_strcasecmp(c->string,string)) c=c->next; return c;}$/;"	f
+cJSON_Hooks	cjson.h	/^typedef struct cJSON_Hooks {$/;"	s
+cJSON_Hooks	cjson.h	/^} cJSON_Hooks;$/;"	t	typeref:struct:cJSON_Hooks
+cJSON_InitHooks	cjson.c	/^void cJSON_InitHooks(cJSON_Hooks* hooks)$/;"	f
+cJSON_IsReference	cjson.h	18;"	d
+cJSON_NULL	cjson.h	12;"	d
+cJSON_New_Item	cjson.c	/^static cJSON *cJSON_New_Item(void)$/;"	f	file:
+cJSON_Number	cjson.h	13;"	d
+cJSON_Object	cjson.h	16;"	d
+cJSON_Parse	cjson.c	/^cJSON *cJSON_Parse(const char *value) {return cJSON_ParseWithOpts(value,0,0);}$/;"	f
+cJSON_ParseWithOpts	cjson.c	/^cJSON *cJSON_ParseWithOpts(const char *value,const char **return_parse_end,int require_null_terminated)$/;"	f
+cJSON_Print	cjson.c	/^char *cJSON_Print(cJSON *item)				{return print_value(item,0,1);}$/;"	f
+cJSON_PrintUnformatted	cjson.c	/^char *cJSON_PrintUnformatted(cJSON *item)	{return print_value(item,0,0);}$/;"	f
+cJSON_ReplaceItemInArray	cjson.c	/^void   cJSON_ReplaceItemInArray(cJSON *array,int which,cJSON *newitem)		{cJSON *c=array->child;while (c && which>0) c=c->next,which--;if (!c) return;$/;"	f
+cJSON_ReplaceItemInObject	cjson.c	/^void   cJSON_ReplaceItemInObject(cJSON *object,const char *string,cJSON *newitem){int i=0;cJSON *c=object->child;while(c && cJSON_strcasecmp(c->string,string))i++,c=c->next;if(c){newitem->string=cJSON_strdup(string);cJSON_ReplaceItemInArray(object,i,newitem);}}$/;"	f
+cJSON_SetIntValue	cjson.h	113;"	d
+cJSON_String	cjson.h	14;"	d
+cJSON_True	cjson.h	11;"	d
+cJSON__h	cjson.h	2;"	d
+cJSON_free	cjson.c	/^static void (*cJSON_free)(void *ptr) = free;$/;"	v	file:
+cJSON_malloc	cjson.c	/^static void *(*cJSON_malloc)(size_t sz) = malloc;$/;"	v	file:
+cJSON_strcasecmp	cjson.c	/^static int cJSON_strcasecmp(const char *s1,const char *s2)$/;"	f	file:
+cJSON_strdup	cjson.c	/^static char* cJSON_strdup(const char* str)$/;"	f	file:
+cfg_path	task.h	/^	char * cfg_path;$/;"	m	struct:single_audit_info
+child	cjson.h	/^	struct cJSON *child;		\/* An array or object item will have a child pointer pointing to a chain of the items in the array\/object. *\/$/;"	m	struct:cJSON	typeref:struct:cJSON::cJSON
+client_data	ae.h	/^	void * client_data;$/;"	m	struct:ae_file_event
+client_data	ae.h	/^	void * client_data;$/;"	m	struct:ae_time_event
+client_data	task_queue.h	/^	void				* 	client_data;		\/\/用户自定义数据$/;"	m	struct:task_node
+client_data_dump	task_queue.h	/^typedef void * client_data_dump(void * client_data);$/;"	t
+close_channel	via_ssh2.c	/^static void close_channel(LIBSSH2_CHANNEL * channel)$/;"	f	file:
+cmd_exec	via_ssh2.c	/^char * cmd_exec(ssh2_conn * conn, LIBSSH2_CHANNEL * channel, char * cmdline)$/;"	f
+cmd_exec_via_pseudoterm	via_ssh2.c	/^int cmd_exec_via_pseudoterm(ssh2_conn * conn, const char * cmdline, $/;"	f
+collect_known_hosts	via_ssh2.c	/^static LIBSSH2_KNOWNHOSTS * collect_known_hosts(ssh2_conn * conn)$/;"	f	file:
+cond	task_queue.h	/^	pthread_cond_t		cond;$/;"	m	struct:worker_task_queue
+conf_buff	main.c	/^char * conf_buff;$/;"	v
+conn	db_mysql.h	/^	MYSQL 					conn;$/;"	m	struct:mysql_server_info
+conn	redis.h	/^	redisContext * conn;$/;"	m	struct:redis_server_info
+create_audit_task	task_single_audit.c	/^static int create_audit_task(task_node_t * task_info, ae_event_loop * ev_loop)$/;"	f	file:
+create_new_task	task_queue.c	/^task_node_t * create_new_task(void)$/;"	f
+create_reference	cjson.c	/^static cJSON *create_reference(cJSON *item) {cJSON *ref=cJSON_New_Item();if (!ref) return 0;memcpy(ref,item,sizeof(cJSON));ref->string=0;ref->type|=cJSON_IsReference;ref->next=ref->prev=0;return ref;}$/;"	f	file:
+create_retransmit_task	task_retransmit.c	/^static int create_retransmit_task(task_node_t * task_info, ae_event_loop * ev_loop)$/;"	f	file:
+create_retransmit_task_node	task_retransmit.c	/^static task_node_t * create_retransmit_task_node(retransmit_info * info)$/;"	f	file:
+create_schedule	work_thread.c	/^worker_thread_t * create_schedule(worker_thread_t * workers, int workers_num)$/;"	f
+create_single_audit_task	task_single_audit.c	/^static task_node_t * create_single_audit_task(single_audit_info * info)$/;"	f	file:
+create_ssh2_cmd_channel	via_ssh2.c	/^static LIBSSH2_CHANNEL * create_ssh2_cmd_channel(ssh2_conn * conn)$/;"	f	file:
+create_ssh2_conn	via_ssh2.c	/^static ssh2_conn * create_ssh2_conn(ssh2_dst_info * info)$/;"	f	file:
+create_ssh2_scp_recv_channel	via_ssh2.c	/^static LIBSSH2_CHANNEL * create_ssh2_scp_recv_channel(ssh2_conn * conn, $/;"	f	file:
+create_ssh2_scp_send_channel	via_ssh2.c	/^static LIBSSH2_CHANNEL * create_ssh2_scp_send_channel(ssh2_conn * conn,$/;"	f	file:
+create_tcp_server	main.c	/^static int create_tcp_server(ae_event_loop * ev_lp, int sockfd)$/;"	f	file:
+create_time	task.h	/^	time_t create_time;$/;"	m	struct:retransmit_info
+create_time	task_queue.h	/^	time_t									create_time;		\/\/任务创建时间$/;"	m	struct:task_node
+create_workers	work_thread.c	/^worker_thread_t * create_workers(int workers_num)$/;"	f
+d	dict.h	/^    dict *d;$/;"	m	struct:dictIterator
+daemonize	main.c	/^void daemonize(void) {$/;"	f
+database	db_mysql.h	/^	char *					database;$/;"	m	struct:mysql_server_info
+db_choice	redis.h	/^	char   db_choice;$/;"	m	struct:redis_server_info
+delete_task_node	task_queue.c	/^void delete_task_node(task_node_t ** tc)$/;"	f
+delete_task_with_id	task_queue.c	/^void delete_task_with_id(worker_task_queue_t * tq, task_node_t * del)$/;"	f
+destroy_data	task_queue.h	/^typedef void destroy_data(void * client_data);$/;"	t
+destroy_func	task_queue.h	/^	destroy_data		*	destroy_func;	\/\/任务销毁时用户数据清理函数$/;"	m	struct:task_node
+destroy_ssh2_conn	via_ssh2.c	/^void destroy_ssh2_conn(ssh2_conn * conn)$/;"	f
+dev_id	task.h	/^	int dev_id;$/;"	m	struct:single_audit_info
+dict	dict.h	/^typedef struct dict {$/;"	s
+dict	dict.h	/^} dict;$/;"	t	typeref:struct:dict
+dictAdd	dict.c	/^int dictAdd(dict *d, void *key, void *val)$/;"	f
+dictAddRaw	dict.c	/^dictEntry *dictAddRaw(dict *d, void *key)$/;"	f
+dictCompareKeys	dict.h	90;"	d
+dictCreate	dict.c	/^dict *dictCreate(dictType *type,$/;"	f
+dictDelete	dict.c	/^int dictDelete(dict *ht, const void *key) {$/;"	f
+dictDeleteNoFree	dict.c	/^int dictDeleteNoFree(dict *ht, const void *key) {$/;"	f
+dictDisableResize	dict.c	/^void dictDisableResize(void) {$/;"	f
+dictEmpty	dict.c	/^void dictEmpty(dict *d) {$/;"	f
+dictEnableResize	dict.c	/^void dictEnableResize(void) {$/;"	f
+dictEntry	dict.h	/^typedef struct dictEntry {$/;"	s
+dictEntry	dict.h	/^} dictEntry;$/;"	t	typeref:struct:dictEntry
+dictExpand	dict.c	/^int dictExpand(dict *d, unsigned long size)$/;"	f
+dictFetchValue	dict.c	/^void *dictFetchValue(dict *d, const void *key) {$/;"	f
+dictFind	dict.c	/^dictEntry *dictFind(dict *d, const void *key)$/;"	f
+dictFreeKey	dict.h	79;"	d
+dictFreeVal	dict.h	62;"	d
+dictGenCaseHashFunction	dict.c	/^unsigned int dictGenCaseHashFunction(const unsigned char *buf, int len) {$/;"	f
+dictGenHashFunction	dict.c	/^unsigned int dictGenHashFunction(const void *key, int len) {$/;"	f
+dictGenericDelete	dict.c	/^static int dictGenericDelete(dict *d, const void *key, int nofree)$/;"	f	file:
+dictGetHashFunctionSeed	dict.c	/^uint32_t dictGetHashFunctionSeed(void) {$/;"	f
+dictGetIterator	dict.c	/^dictIterator *dictGetIterator(dict *d)$/;"	f
+dictGetKey	dict.h	96;"	d
+dictGetRandomKey	dict.c	/^dictEntry *dictGetRandomKey(dict *d)$/;"	f
+dictGetSafeIterator	dict.c	/^dictIterator *dictGetSafeIterator(dict *d) {$/;"	f
+dictGetSignedIntegerVal	dict.h	98;"	d
+dictGetUnsignedIntegerVal	dict.h	99;"	d
+dictGetVal	dict.h	97;"	d
+dictHashKey	dict.h	95;"	d
+dictIdentityHashFunction	dict.c	/^unsigned int dictIdentityHashFunction(unsigned int key)$/;"	f
+dictIntHashFunction	dict.c	/^unsigned int dictIntHashFunction(unsigned int key)$/;"	f
+dictIsRehashing	dict.h	102;"	d
+dictIterator	dict.h	/^typedef struct dictIterator {$/;"	s
+dictIterator	dict.h	/^} dictIterator;$/;"	t	typeref:struct:dictIterator
+dictNext	dict.c	/^dictEntry *dictNext(dictIterator *iter)$/;"	f
+dictRehash	dict.c	/^int dictRehash(dict *d, int n) {$/;"	f
+dictRehashMilliseconds	dict.c	/^int dictRehashMilliseconds(dict *d, int ms) {$/;"	f
+dictRelease	dict.c	/^void dictRelease(dict *d)$/;"	f
+dictReleaseIterator	dict.c	/^void dictReleaseIterator(dictIterator *iter)$/;"	f
+dictReplace	dict.c	/^int dictReplace(dict *d, void *key, void *val)$/;"	f
+dictReplaceRaw	dict.c	/^dictEntry *dictReplaceRaw(dict *d, void *key) {$/;"	f
+dictResize	dict.c	/^int dictResize(dict *d)$/;"	f
+dictSetHashFunctionSeed	dict.c	/^void dictSetHashFunctionSeed(uint32_t seed) {$/;"	f
+dictSetKey	dict.h	83;"	d
+dictSetSignedIntegerVal	dict.h	73;"	d
+dictSetUnsignedIntegerVal	dict.h	76;"	d
+dictSetVal	dict.h	66;"	d
+dictSize	dict.h	101;"	d
+dictSlots	dict.h	100;"	d
+dictType	dict.h	/^typedef struct dictType {$/;"	s
+dictType	dict.h	/^} dictType;$/;"	t	typeref:struct:dictType
+dict_can_resize	dict.c	/^static int dict_can_resize = 1;$/;"	v	file:
+dict_force_resize_ratio	dict.c	/^static unsigned int dict_force_resize_ratio = 5;$/;"	v	file:
+dict_hash_function_seed	dict.c	/^static uint32_t dict_hash_function_seed = 5381;$/;"	v	file:
+dictht	dict.h	/^typedef struct dictht {$/;"	s
+dictht	dict.h	/^} dictht;$/;"	t	typeref:struct:dictht
+dst_addr	task.h	/^	char * dst_addr;$/;"	m	struct:retransmit_info
+entry	dict.h	/^    dictEntry *entry, *nextEntry;$/;"	m	struct:dictIterator
+ep	cjson.c	/^static const char *ep;$/;"	v	file:
+epfd	task_queue.h	/^	int					epfd;$/;"	m	struct:worker_task_queue
+events	ae.h	/^	ae_file_event  * events;$/;"	m	struct:ae_event_loop
+execute	task.h	/^	int execute;$/;"	m	struct:retransmit_info
+execute	task.h	/^	int execute;$/;"	m	struct:single_audit_info
+execute	task_queue.h	/^	int execute;$/;"	m	struct:task_node
+execute_retransmit_task	task_retransmit.c	/^int execute_retransmit_task(const char * task_info, struct ae_event_loop * ev_loop)$/;"	f
+execute_single_audit_task	task_single_audit.c	/^int execute_single_audit_task(char * buff, struct ae_event_loop * ev_loop)$/;"	f
+execute_type	task_queue.h	/^enum execute_type {$/;"	g
+fd	ae.h	/^	int fd;$/;"	m	struct:ae_fired_event
+fetch_authentication	via_ssh2.c	/^static int fetch_authentication(ssh2_conn * conn, ssh2_dst_info * info)$/;"	f	file:
+finalizer_func	ae.h	/^	ae_event_finalizer_func * finalizer_func;$/;"	m	struct:ae_time_event
+fingerprint_ssh2_conn	via_ssh2.c	/^static void fingerprint_ssh2_conn(ssh2_conn * conn)$/;"	f	file:
+fired	ae.h	/^	ae_fired_event * fired;$/;"	m	struct:ae_event_loop
+firstByteMark	cjson.c	/^static const unsigned char firstByteMark[7] = { 0x00, 0x00, 0xC0, 0xE0, 0xF0, 0xF8, 0xFC };$/;"	v	file:
+flag	db_mysql.h	/^	int							flag;$/;"	m	struct:mysql_server_info
+free_fn	cjson.h	/^      void (*free_fn)(void *ptr);$/;"	m	struct:cJSON_Hooks
+func	task_queue.h	/^	task_fun 						*	func;						\/\/实际执行任务回调函数$/;"	m	struct:task_node
+g_d	dict.c	/^dict * g_d;$/;"	v
+g_schedule	work_thread.c	/^worker_thread_t * g_schedule;$/;"	v
+g_server	db_mysql.c	/^static mysql_server_info g_server;$/;"	v	file:
+g_server	redis.c	/^static redis_server_info g_server;$/;"	v	file:
+handle_feedback	main.c	/^static void handle_feedback(struct ae_event_loop * ev_lp, int fd,$/;"	f	file:
+handle_update	main.c	/^static void handle_update(struct ae_event_loop * ev_lp, int fd,$/;"	f	file:
+hashFunction	dict.h	/^    unsigned int (*hashFunction)(const void *key);$/;"	m	struct:dictType
+hash_func	dict.c	/^static unsigned int hash_func(const void * key) {$/;"	f	file:
+head	task_queue.h	/^	struct list_head	head;$/;"	m	struct:worker_task_queue	typeref:struct:worker_task_queue::list_head
+hostname	via_ssh2.h	/^	char * hostname;$/;"	m	struct:ssh2_dst_info
+ht	dict.h	/^    dictht ht[2];$/;"	m	struct:dict
+id	ae.h	/^	long long id;$/;"	m	struct:ae_time_event
+index	dict.h	/^    int table, index, safe;$/;"	m	struct:dictIterator
+init_conn_with_fifo	main.c	/^static int init_conn_with_fifo(ae_event_loop * ev_lp)$/;"	f	file:
+init_hash_dict	dict.c	/^int init_hash_dict(void)$/;"	f
+init_thread_pool	work_thread.c	/^void init_thread_pool(int work_num)$/;"	f
+init_worker_task_queue	task_queue.c	/^void init_worker_task_queue(worker_task_queue_t * tq)$/;"	f
+interval	task.h	/^	int interval;$/;"	m	struct:retransmit_info
+interval	task.h	/^	int interval;$/;"	m	struct:single_audit_info
+interval	task_queue.h	/^	int											interval;				\/\/任务执行间隔$/;"	m	struct:task_node
+isend	inifile.c	/^static   int  isend( char  c)$/;"	f	file:
+isleftbarce	inifile.c	/^static   int  isleftbarce( char  c)$/;"	f	file:
+isnewline	inifile.c	/^static  int isnewline( char  c)$/;"	f	file:
+isrightbrace	inifile.c	/^static   int  isrightbrace( char  c )$/;"	f	file:
+iterators	dict.h	/^    int iterators; \/* number of iterators currently running *\/$/;"	m	struct:dict
+key	dict.h	/^    void *key;$/;"	m	struct:dictEntry
+keyCompare	dict.h	/^    int (*keyCompare)(void *privdata, const void *key1, const void *key2);$/;"	m	struct:dictType
+keyDestructor	dict.h	/^    void (*keyDestructor)(void *privdata, void *key);$/;"	m	struct:dictType
+keyDup	dict.h	/^    void *(*keyDup)(void *privdata, const void *key);$/;"	m	struct:dictType
+key_compare	dict.c	/^static int key_compare(void * privdata, const void * key1, const void * key2) {$/;"	f	file:
+key_destructor	dict.c	/^static void key_destructor(void * privdata, void * key)$/;"	f	file:
+key_dup	dict.c	/^static void * key_dup(void * privdata, const void * key) {$/;"	f	file:
+keyfile1	via_ssh2.c	/^const char * keyfile1 = "~\/.ssh\/id_rsa.pub";$/;"	v
+keyfile2	via_ssh2.c	/^const char * keyfile2 = "~\/.ssh\/id_rsa";$/;"	v
+last_time	ae.h	/^	time_t last_time;$/;"	m	struct:ae_event_loop
+list	task_queue.h	/^	struct list_head 		list;				\/\/连接任务队列$/;"	m	struct:task_node	typeref:struct:task_node::list_head
+list_add_tail	list.h	/^static inline void list_add_tail(struct list_head *new, struct list_head *head)$/;"	f
+list_del	list.h	/^static inline void list_del(struct list_head *entry)$/;"	f
+list_del_init	list.h	/^static inline void list_del_init(struct list_head *entry)$/;"	f
+list_empty	list.h	/^static inline int list_empty(struct list_head *head)$/;"	f
+list_entry	list.h	189;"	d
+list_for_each	list.h	197;"	d
+list_for_each_entry	list.h	225;"	d
+list_for_each_entry_safe	list.h	237;"	d
+list_for_each_prev	list.h	205;"	d
+list_for_each_safe	list.h	215;"	d
+list_head	list.h	/^struct list_head {$/;"	s
+list_move	list.h	/^static inline void list_move(struct list_head *list, struct list_head *head)$/;"	f
+list_move_tail	list.h	/^static inline void list_move_tail(struct list_head *list,$/;"	f
+list_splice	list.h	/^static inline void list_splice(struct list_head *list, struct list_head *head)$/;"	f
+list_splice_init	list.h	/^static inline void list_splice_init(struct list_head *list,$/;"	f
+load_conf	main.c	/^static int load_conf(const char * file)$/;"	f	file:
+load_ini_file	inifile.c	/^int load_ini_file(const  char * file,  char * buf)$/;"	f
+load_mysql_conf	db_mysql.c	/^int load_mysql_conf(const char * buff)$/;"	f
+load_redis_conf	redis.c	/^int load_redis_conf(const char * buff)$/;"	f
+load_redis_task	redis.c	/^int load_redis_task(const char * time_str, struct ae_event_loop * ev_loop)$/;"	f
+lock	task_queue.h	/^	pthread_mutex_t		lock;$/;"	m	struct:worker_task_queue
+log_init	main.c	/^static int log_init(const char * conf)$/;"	f	file:
+logger	main.c	/^zlog_category_t * logger;$/;"	v
+logger	via_ssh2.c	/^zlog_category_t * logger;$/;"	v
+main	main.c	/^int main(int argc, char * argv[])$/;"	f
+malloc_fn	cjson.h	/^      void *(*malloc_fn)(size_t sz);$/;"	m	struct:cJSON_Hooks
+mask	ae.h	/^	int mask;			\/\/ AE_READABLE or AE_WRITABLE$/;"	m	struct:ae_file_event
+mask	ae.h	/^	int mask;$/;"	m	struct:ae_fired_event
+maxfd	ae.h	/^	int maxfd;$/;"	m	struct:ae_event_loop
+mysql_disconnect	db_mysql.c	/^static void mysql_disconnect(void)$/;"	f	file:
+mysql_server_info	db_mysql.h	/^typedef struct mysql_server_info {$/;"	s
+mysql_server_info	db_mysql.h	/^} mysql_server_info;$/;"	t	typeref:struct:mysql_server_info
+net_create_socket	net.c	/^static int net_create_socket(int domain, int type)$/;"	f	file:
+net_disable_tcp_no_delay	net.c	/^int net_disable_tcp_no_delay(int fd)$/;"	f
+net_enable_tcp_no_delay	net.c	/^int net_enable_tcp_no_delay(int fd)$/;"	f
+net_generic_accept	net.c	/^static int net_generic_accept(int s, struct sockaddr * sa, socklen_t * len)$/;"	f	file:
+net_keep_alive	net.c	/^int net_keep_alive(int fd, int interval)$/;"	f
+net_listen	net.c	/^int net_listen(int fd, struct sockaddr * sa, socklen_t len)$/;"	f
+net_peer_to_string	net.c	/^int net_peer_to_string(int fd, char * ip, int * port)$/;"	f
+net_read	net.c	/^int net_read(int fd, char * buf, int count)$/;"	f
+net_resolve	net.c	/^int net_resolve(const char * hostname, char * ipbuf)$/;"	f
+net_set_send_buff	net.c	/^int net_set_send_buff(int fd, int buffsize)$/;"	f
+net_set_tcp_no_delay	net.c	/^static int net_set_tcp_no_delay(int fd, int val)$/;"	f	file:
+net_sock_name	net.c	/^int net_sock_name(int fd, char * ip, int * port)$/;"	f
+net_socket_non_block	net.c	/^int net_socket_non_block(int fd)$/;"	f
+net_tcp_accept	net.c	/^int net_tcp_accept(int s, char * ip, int * port)$/;"	f
+net_tcp_connect	net.c	/^int net_tcp_connect(const char * addr, int port)$/;"	f
+net_tcp_generic_connect	net.c	/^static int net_tcp_generic_connect(const char * addr, int port, int flags)$/;"	f	file:
+net_tcp_keep_alive	net.c	/^int net_tcp_keep_alive(int fd)$/;"	f
+net_tcp_nonblock_connect	net.c	/^int net_tcp_nonblock_connect(const char * addr, int port)$/;"	f
+net_tcp_server	net.c	/^int net_tcp_server(const int port, const char * bindaddr)$/;"	f
+net_unix_accept	net.c	/^int net_unix_accept(int s)$/;"	f
+net_unix_connect	net.c	/^int net_unix_connect(const char * addr, int port)$/;"	f
+net_unix_generic_connect	net.c	/^static int net_unix_generic_connect(const char * path, int flags)$/;"	f	file:
+net_unix_nonblock_connect	net.c	/^int net_unix_nonblock_connect(const char * addr, int port)$/;"	f
+net_unix_server	net.c	/^int net_unix_server(const char * path, mode_t perm)$/;"	f
+net_write	net.c	/^int net_write(int fd, char * buf, int count)$/;"	f
+next	ae.h	/^	struct ae_time_event * next;$/;"	m	struct:ae_time_event	typeref:struct:ae_time_event::ae_time_event
+next	cjson.h	/^	struct cJSON *next,*prev;	\/* next\/prev allow you to walk array\/object chains. Alternatively, use GetArraySize\/GetArrayItem\/GetObjectItem *\/$/;"	m	struct:cJSON	typeref:struct:cJSON::cJSON
+next	dict.h	/^    struct dictEntry *next;$/;"	m	struct:dictEntry	typeref:struct:dictEntry::dictEntry
+next	list.h	/^	struct list_head *next, *prev;$/;"	m	struct:list_head	typeref:struct:list_head::list_head
+nextEntry	dict.h	/^    dictEntry *entry, *nextEntry;$/;"	m	struct:dictIterator
+notify	task_queue.c	/^void notify(worker_task_queue_t * tq)$/;"	f
+ops_mysql_exec_modify	db_mysql.c	/^int ops_mysql_exec_modify(const char * sql)$/;"	f
+parse_array	cjson.c	/^static const char *parse_array(cJSON *item,const char *value)$/;"	f	file:
+parse_file	inifile.c	/^static  int  parse_file(const   char   * section,  $/;"	f	file:
+parse_number	cjson.c	/^static const char *parse_number(cJSON *item,const char *num)$/;"	f	file:
+parse_object	cjson.c	/^static const char *parse_object(cJSON *item,const char *value)$/;"	f	file:
+parse_retransmit_task	task_retransmit.c	/^static retransmit_info * parse_retransmit_task(const char * task_info)$/;"	f	file:
+parse_single_audit_task	task_single_audit.c	/^static single_audit_info * parse_single_audit_task(const char * buff)$/;"	f	file:
+parse_string	cjson.c	/^static const char *parse_string(cJSON *item,const char *str)$/;"	f	file:
+parse_value	cjson.c	/^static const char *parse_value(cJSON *item,const char *value)$/;"	f	file:
+password	db_mysql.h	/^	char *					password;$/;"	m	struct:mysql_server_info
+password	via_ssh2.h	/^	char * password;$/;"	m	struct:ssh2_dst_info
+pipes	task_queue.h	/^	int					pipes[2];$/;"	m	struct:worker_task_queue
+pop_task	task_queue.c	/^void pop_task(worker_task_queue_t * tq, task_node_t ** tn)$/;"	f
+port	via_ssh2.h	/^	short    port;$/;"	m	struct:ssh2_dst_info
+prev	cjson.h	/^	struct cJSON *next,*prev;	\/* next\/prev allow you to walk array\/object chains. Alternatively, use GetArraySize\/GetArrayItem\/GetObjectItem *\/$/;"	m	struct:cJSON	typeref:struct:cJSON::
+prev	list.h	/^	struct list_head *next, *prev;$/;"	m	struct:list_head	typeref:struct:list_head::
+print_array	cjson.c	/^static char *print_array(cJSON *item,int depth,int fmt)$/;"	f	file:
+print_number	cjson.c	/^static char *print_number(cJSON *item)$/;"	f	file:
+print_object	cjson.c	/^static char *print_object(cJSON *item,int depth,int fmt)$/;"	f	file:
+print_string	cjson.c	/^static char *print_string(cJSON *item)	{return print_string_ptr(item->valuestring);}$/;"	f	file:
+print_string_ptr	cjson.c	/^static char *print_string_ptr(const char *str)$/;"	f	file:
+print_value	cjson.c	/^static char *print_value(cJSON *item,int depth,int fmt)$/;"	f	file:
+priority	task_queue.h	/^	unsigned int								priority;			\/\/指定任务优先级$/;"	m	struct:task_node
+privdata	dict.h	/^    void *privdata;$/;"	m	struct:dict
+process_time_event	ae.c	/^static int process_time_event(ae_event_loop * ev_loop)$/;"	f	file:
+r_file_func	ae.h	/^	ae_file_func * r_file_func;$/;"	m	struct:ae_file_event
+read_profile_int	inifile.c	/^int  read_profile_int(const  char *section,$/;"	f
+read_profile_string	inifile.c	/^int  read_profile_string($/;"	f
+receive_notify	task_queue.c	/^void receive_notify(worker_task_queue_t * tq)$/;"	f
+redis_connect_timeout	redis.c	/^static int redis_connect_timeout(void)$/;"	f	file:
+redis_server_info	redis.h	/^typedef struct redis_server_info {$/;"	s
+redis_server_info	redis.h	/^} redis_server_info;$/;"	t	typeref:struct:redis_server_info
+rehashidx	dict.h	/^    int rehashidx; \/* rehashing not in progress if rehashidx == -1 *\/$/;"	m	struct:dict
+retransmit	task_retransmit.c	/^static void * retransmit(void * info)$/;"	f	file:
+retransmit_data_destroy	task_retransmit.c	/^static void retransmit_data_destroy(void * client_data)$/;"	f	file:
+retransmit_data_dump	task_retransmit.c	/^static void * retransmit_data_dump(void * client_data)$/;"	f	file:
+retransmit_info	task.h	/^typedef struct retransmit_info {$/;"	s
+retransmit_info	task.h	/^} retransmit_info;$/;"	t	typeref:struct:retransmit_info
+rfds	ae_select.c	/^	fd_set rfds, wfds;$/;"	m	struct:ae_api_state	file:
+s64	dict.h	/^        int64_t s64;$/;"	m	union:dictEntry::__anon1
+safe	dict.h	/^    int table, index, safe;$/;"	m	struct:dictIterator
+schedule	work_thread.h	/^	worker_thread_t * schedule;	\/\/对应任务调度(分发)线程$/;"	m	struct:threads_pool
+schedule_thread_func	work_thread.c	/^static void * schedule_thread_func(void * client_data)$/;"	f	file:
+scp_recv_file	via_ssh2.c	/^int scp_recv_file(ssh2_conn * conn, const char * remote_path, const char * local_path)$/;"	f
+scp_send_file	via_ssh2.c	/^int scp_send_file(ssh2_conn * conn, const char * remote_path, const char * locale_path)$/;"	f
+script_path	task.h	/^	char * script_path;$/;"	m	struct:single_audit_info
+server_addr	db_mysql.h	/^	char * 					server_addr;$/;"	m	struct:mysql_server_info
+server_addr	redis.h	/^	char * server_addr;$/;"	m	struct:redis_server_info
+server_port	db_mysql.h	/^	unsigned short	server_port;$/;"	m	struct:mysql_server_info
+server_port	redis.h	/^	short	 server_port;$/;"	m	struct:redis_server_info
+session	via_ssh2.h	/^	LIBSSH2_SESSION * session;$/;"	m	struct:ssh2_conn
+set_fd_non_block	task_queue.c	/^static int set_fd_non_block(int fd)$/;"	f	file:
+set_ssh2_session_block	via_ssh2.c	/^static void set_ssh2_session_block(LIBSSH2_SESSION * session, int flag)$/;"	f	file:
+set_up_ssh2_conn	via_ssh2.c	/^static int set_up_ssh2_conn(ssh2_conn * conn)$/;"	f	file:
+setsize	ae.h	/^	int setsize;$/;"	m	struct:ae_event_loop
+sftp_file	via_ssh2.c	/^int sftp_file(ssh2_conn * conn, const char * remote_path, const char * local_path)$/;"	f
+single_audit	task_single_audit.c	/^static void * single_audit(void * info)$/;"	f	file:
+single_audit_client_data_destroy	task_single_audit.c	/^static void single_audit_client_data_destroy(void * client_data)$/;"	f	file:
+single_audit_client_data_dump	task_single_audit.c	/^static void * single_audit_client_data_dump(void * client_data)$/;"	f	file:
+single_audit_info	task.h	/^typedef struct single_audit_info {$/;"	s
+single_audit_info	task.h	/^} single_audit_info;$/;"	t	typeref:struct:single_audit_info
+size	dict.h	/^    unsigned long size;$/;"	m	struct:dictht
+sizemask	dict.h	/^    unsigned long sizemask;$/;"	m	struct:dictht
+skip	cjson.c	/^static const char *skip(const char *in) {while (in && *in && (unsigned char)*in<=32) in++; return in;}$/;"	f	file:
+sockfd	via_ssh2.h	/^	int sockfd;$/;"	m	struct:ssh2_conn
+ssh2_conn	via_ssh2.h	/^typedef struct ssh2_conn {$/;"	s
+ssh2_conn	via_ssh2.h	/^} ssh2_conn;$/;"	t	typeref:struct:ssh2_conn
+ssh2_dst_info	via_ssh2.h	/^typedef struct ssh2_dst_info {$/;"	s
+ssh2_dst_info	via_ssh2.h	/^} ssh2_dst_info;$/;"	t	typeref:struct:ssh2_dst_info
+ssh2_init	main.c	/^static int ssh2_init(void)$/;"	f	file:
+ssh2_init_conn	via_ssh2.c	/^int ssh2_init_conn(ssh2_dst_info * info, ssh2_conn ** conn)$/;"	f
+stop	ae.h	/^	int stop;$/;"	m	struct:ae_event_loop
+stop	work_thread.h	/^	unsigned int		stop;				\/\/线程销毁标志$/;"	m	struct:worker_thread
+string	cjson.h	/^	char *string;				\/* The item's name string, if this item is the child of, or is in the list of subitems of an object. *\/$/;"	m	struct:cJSON
+suffix_object	cjson.c	/^static void suffix_object(cJSON *prev,cJSON *item) {prev->next=item;item->prev=prev;}$/;"	f	file:
+table	dict.h	/^    dictEntry **table;$/;"	m	struct:dictht
+table	dict.h	/^    int table, index, safe;$/;"	m	struct:dictIterator
+task_dict_type	dict.c	/^static dictType task_dict_type = {$/;"	v	file:
+task_fun	task_queue.h	/^typedef void * task_fun(void * client_data);$/;"	t
+task_id	task.h	/^	int task_id;$/;"	m	struct:single_audit_info
+task_id	task.h	/^	unsigned long long task_id;$/;"	m	struct:retransmit_info
+task_id	task_queue.h	/^	unsigned long long					task_id;			\/\/任务ID$/;"	m	struct:task_node
+task_info	task.h	/^	char * task_info;$/;"	m	struct:retransmit_info
+task_node	task_queue.h	/^typedef struct task_node {$/;"	s
+task_node_dump	task_queue.c	/^task_node_t * task_node_dump(task_node_t * src_nd)$/;"	f
+task_node_t	task_queue.h	/^} task_node_t;$/;"	t	typeref:struct:task_node
+task_type	task.h	/^	int task_type;$/;"	m	struct:retransmit_info
+task_type	task.h	/^	int task_type;$/;"	m	struct:single_audit_info
+task_type	task.h	/^enum task_type {$/;"	g
+tasks_num	task_queue.h	/^	unsigned long long	tasks_num;$/;"	m	struct:worker_task_queue
+tcp_server	main.c	/^static int tcp_server(void)$/;"	f	file:
+thread_type	work_thread.h	/^enum thread_type {$/;"	g
+threads_pool	work_thread.h	/^typedef struct threads_pool {$/;"	s
+threads_pool_t	work_thread.h	/^} threads_pool_t;$/;"	t	typeref:struct:threads_pool
+tid	work_thread.h	/^	pthread_t			tid;					\/\/保存线程tid$/;"	m	struct:worker_thread
+timeInMilliseconds	dict.c	/^long long timeInMilliseconds(void) {$/;"	f
+time_event_head	ae.h	/^	ae_time_event * time_event_head;$/;"	m	struct:ae_event_loop
+time_event_next_id	ae.h	/^	long long time_event_next_id;$/;"	m	struct:ae_event_loop
+time_func	ae.h	/^	ae_time_func * time_func;$/;"	m	struct:ae_time_event
+timeout	redis.h	/^	struct timeval timeout;$/;"	m	struct:redis_server_info	typeref:struct:redis_server_info::timeval
+tio_saved	via_ssh2.c	/^int tio_saved = 0;$/;"	v
+tn_client_data_dump	task_queue.h	/^	client_data_dump	*	tn_client_data_dump;	\/\/用户数据dump回调函数$/;"	m	struct:task_node
+tq	work_thread.h	/^	worker_task_queue_t	*	tq;		\/\/对应任务队列$/;"	m	struct:worker_thread
+tq_tasks_num	task_queue.c	/^unsigned long long tq_tasks_num(worker_task_queue_t * tq)$/;"	f
+type	cjson.h	/^	int type;					\/* The type of the item, as above. *\/$/;"	m	struct:cJSON
+type	dict.h	/^    dictType *type;$/;"	m	struct:dict
+u64	dict.h	/^        uint64_t u64;$/;"	m	union:dictEntry::__anon1
+update_remote_task_info	redis.c	/^int update_remote_task_info(retransmit_info * task_info)$/;"	f
+update_serial_task_info	redis.c	/^static int update_serial_task_info(const char * task_info)$/;"	f	file:
+used	dict.h	/^    unsigned long used;$/;"	m	struct:dictht
+user	db_mysql.h	/^	char * 					user;$/;"	m	struct:mysql_server_info
+username	via_ssh2.h	/^	char * username;$/;"	m	struct:ssh2_dst_info
+v	dict.h	/^    } v;$/;"	m	struct:dictEntry	typeref:union:dictEntry::__anon1
+val	dict.h	/^        void *val;$/;"	m	union:dictEntry::__anon1
+valDestructor	dict.h	/^    void (*valDestructor)(void *privdata, void *obj);$/;"	m	struct:dictType
+valDup	dict.h	/^    void *(*valDup)(void *privdata, const void *obj);$/;"	m	struct:dictType
+val_destructor	dict.c	/^static void val_destructor(void * privdata, void * val)$/;"	f	file:
+val_dup	dict.c	/^static void * val_dup(void * privdata, const void * val) {$/;"	f	file:
+valuedouble	cjson.h	/^	double valuedouble;			\/* The item's number, if type==cJSON_Number *\/$/;"	m	struct:cJSON
+valueint	cjson.h	/^	int valueint;				\/* The item's number, if type==cJSON_Number *\/$/;"	m	struct:cJSON
+valuestring	cjson.h	/^	char *valuestring;			\/* The item's string, if type==cJSON_String *\/$/;"	m	struct:cJSON
+w_file_func	ae.h	/^	ae_file_func * w_file_func;$/;"	m	struct:ae_file_event
+waitsocket	via_ssh2.c	/^static int waitsocket(ssh2_conn * conn)$/;"	f	file:
+wfds	ae_select.c	/^	fd_set rfds, wfds;$/;"	m	struct:ae_api_state	file:
+when_ms	ae.h	/^	long when_ms;$/;"	m	struct:ae_time_event
+when_sec	ae.h	/^	long when_sec;$/;"	m	struct:ae_time_event
+worker_task_queue	task_queue.h	/^typedef struct worker_task_queue {$/;"	s
+worker_task_queue_t	task_queue.h	/^} worker_task_queue_t;$/;"	t	typeref:struct:worker_task_queue
+worker_thread	work_thread.h	/^typedef struct worker_thread {$/;"	s
+worker_thread_func	work_thread.c	/^static void * worker_thread_func(void * client_data)$/;"	f	file:
+worker_thread_t	work_thread.h	/^} worker_thread_t;$/;"	t	typeref:struct:worker_thread
+workers	work_thread.h	/^	worker_thread_t * workers;	\/\/对应任务工作(执行)线程$/;"	m	struct:threads_pool
+workers_num	work_thread.h	/^	unsigned int	  workers_num;$/;"	m	struct:threads_pool
