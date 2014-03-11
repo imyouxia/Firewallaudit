@@ -36,6 +36,7 @@ int net_socket_non_block(int fd)
 }
 
 // modify send buff size at kernel layer
+// SOL_SOCKET表示socket层，SO_SNDBUF 设置送出的暂存区域
 int net_set_send_buff(int fd, int buffsize)
 {
 	if (setsockopt(fd, SOL_SOCKET, SO_SNDBUF, &buffsize, sizeof(buffsize)) == -1) {
@@ -47,6 +48,7 @@ int net_set_send_buff(int fd, int buffsize)
 }
 
 
+// 定期确定连线是否已终止
 int net_keep_alive(int fd, int interval)
 {
 	int yes = 1;
@@ -57,7 +59,8 @@ int net_keep_alive(int fd, int interval)
 
 #ifdef __linux__
 	int val = interval;
-	
+
+	// IPPROTO_TCP 传输层 ，检查心跳	
 	if (setsockopt(fd, IPPROTO_TCP, TCP_KEEPIDLE, &val, sizeof(val)) < 0) {
 		zlog_error(logger, "setsockopt for setting tcp keepidle failed");	
 		return NET_ERR;
@@ -92,6 +95,7 @@ int net_tcp_keep_alive(int fd)
 
 static int net_set_tcp_no_delay(int fd, int val)
 {
+	// Nagle算法，就是有数据立马发出，Nagle是为了防止网络拥塞的。
 	if (setsockopt(fd, IPPROTO_TCP, TCP_NODELAY, &val, sizeof(val)) < 0) {
 		zlog_error(logger, "setsockopt for setting tcp nodelay failed");	
 		return NET_ERR;
@@ -145,7 +149,7 @@ int net_resolve(const char * hostname, char * ipbuf)
 	hints.ai_canonname = NULL;
 	hints.ai_addr = NULL;
 	hints.ai_next = NULL;
-
+	//getaddrinfo 是协议无关的，可以做出名字->地址，服务->端口的转换，返回一个指向addrinfo结构体链表的指针
 	int retv = getaddrinfo(hostname, NULL, &hints, &result);
 	if (retv != 0) {
 		zlog_error(logger, "getaddrinfo with hostname: %s failed", hostname);	
@@ -153,6 +157,7 @@ int net_resolve(const char * hostname, char * ipbuf)
 	}
 
 	for (iterator = result; iterator != NULL; iterator = iterator->ai_next) {
+		// inet_ntop 将整数变为点分十进制
 		inet_ntop(iterator->ai_family, &iterator->ai_addr, ipbuf, IPV4_ADDR_LENGTH);
 		break;
 	}
@@ -176,8 +181,10 @@ static int net_tcp_generic_connect(const char * addr, int port, int flags)
 	dst_addr.sin_port = htons(port);
 
 	// Detect whether need to resolve addr
+	// 将点分十进制变为整数
 	if ((retv = inet_pton(AF_INET, addr, &dst_addr.sin_addr)) <= 0) {
 		struct hostent * he;
+		// 主机名到地址解析
 		he = gethostbyname(addr);
 		if (he == NULL) {
 			zlog_error(logger, "resolve %s failed", addr);	
@@ -222,6 +229,7 @@ static int net_unix_generic_connect(const char * path, int flags)
 {
 	int unixfd;
 	int retv;
+	// 一种进程间通信IPC，Unix Doamin Socket.
 	struct sockaddr_un dst_addr;
 
 	unixfd = net_create_socket(AF_LOCAL, SOCK_STREAM);
@@ -243,6 +251,7 @@ static int net_unix_generic_connect(const char * path, int flags)
 	// Whether to remove already existed path
 	retv = connect(unixfd, (struct sockaddr *)&dst_addr, sizeof(dst_addr));
 	if (retv == -1) {
+		// 当以非阻塞的方式进行连接的时候，返回-1并不一定表示错误，如果错误码为EINPROGRESS，表示链接还在进行中 
 		if (errno == EINPROGRESS && (flags & NET_CONNECT_NONBLOCK)) {
 			return unixfd;
 		}
@@ -374,6 +383,7 @@ static int net_generic_accept(int s, struct sockaddr * sa, socklen_t * len)
 	while (1) {
 		fd = accept(s, sa, len);
 		if (fd == -1) {
+			// 由于信号中断，产生的错误
 			if (errno == EINTR)
 				continue;
 			else {
