@@ -41,7 +41,7 @@ typedef struct dict {
     dictType *type;
     void *privdata;
     dictht ht[2];
-    int rehashidx; /* rehashing not in progress if rehashidx == -1 */
+    int rehashidx; /* rehashing not in progress if rehashidx == -1 rehashidx记录的实际上是rehash进行到的索引，比如如果rehash进行到第10个元素，那么rehashidx的值就为9。如果没有在进行rehash，rehashidex的值就为-1.*/
     int iterators; /* number of iterators currently running */
 } dict;
 
