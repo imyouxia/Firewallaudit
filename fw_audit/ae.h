@@ -55,16 +55,16 @@ typedef struct ae_fired_event {
 } ae_fired_event;
 
 typedef struct ae_event_loop {
-	int maxfd;
-	int setsize;
-	long long time_event_next_id;
-	time_t last_time;
-	ae_file_event  * events;
-	ae_fired_event * fired;
-	ae_time_event * time_event_head;
-	int stop;
-	void * api_data;
-	ae_before_sleep_func * beforesleep;
+	int maxfd; //当前注册的fd最大值，初始值是-1
+	int setsize; //轮循的最大文件句柄+1
+	long long time_event_next_id; //下一个定时事件编号
+	time_t last_time; //上次轮循的时间
+	ae_file_event  * events; //存放注册的io事件数组，数组大小为setsize
+	ae_fired_event * fired; //已经轮循到的事件
+	ae_time_event * time_event_head; //定时事件链表
+	int stop; //循环是否停止
+	void * api_data; //这是epoll/select/kqueue等用到的结构
+	ae_before_sleep_func * beforesleep; //事件循环中每次处理事件之前调用
 } ae_event_loop;
 
 
