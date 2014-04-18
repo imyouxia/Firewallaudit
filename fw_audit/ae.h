@@ -28,7 +28,7 @@ typedef void ae_event_finalizer_func(struct ae_event_loop * event_loop,
 
 typedef void ae_before_sleep_func(struct ae_event_loop * event_loop);
 
-
+// 时间事件结构，是一个链表
 typedef struct ae_time_event {
 	long long id;
 	long when_sec;
@@ -40,6 +40,7 @@ typedef struct ae_time_event {
 } ae_time_event;
 
 /* Registered File Event*/
+//文件事件结构，是一个数组
 typedef struct ae_file_event {
 	int mask;			// AE_READABLE or AE_WRITABLE
 	ae_file_func * r_file_func;
@@ -47,6 +48,7 @@ typedef struct ae_file_event {
 	void * client_data;
 } ae_file_event;
 
+// 表示即将执行的事件
 typedef struct ae_fired_event {
 	int fd;
 	int mask;
