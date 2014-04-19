@@ -9,6 +9,7 @@
 /* Unused arguments generate annoying warnings... */
 #define DICT_NOTUSED(V) ((void) V)
 
+//hash表中每一项key/value，若key的映射值，以单链表的形式保存
 typedef struct dictEntry {
     void *key;
     union {
@@ -19,27 +20,28 @@ typedef struct dictEntry {
     struct dictEntry *next;
 } dictEntry;
 
+//每种hash table的类型，里面既有成员函数，又有成员变量，模拟的C++类，每个函数带有的privdata均为预留参数
 typedef struct dictType {
-    unsigned int (*hashFunction)(const void *key);
-    void *(*keyDup)(void *privdata, const void *key);
-    void *(*valDup)(void *privdata, const void *obj);
-    int (*keyCompare)(void *privdata, const void *key1, const void *key2);
-    void (*keyDestructor)(void *privdata, void *key);
-    void (*valDestructor)(void *privdata, void *obj);
+    unsigned int (*hashFunction)(const void *key); //要采用的hash函数
+    void *(*keyDup)(void *privdata, const void *key); //对key进行拷贝
+    void *(*valDup)(void *privdata, const void *obj); //对value进行拷贝
+    int (*keyCompare)(void *privdata, const void *key1, const void *key2); //key比较器
+    void (*keyDestructor)(void *privdata, void *key); //销毁key，一般为释放空间
+    void (*valDestructor)(void *privdata, void *obj); //销毁value，一般为释放空间
 } dictType;
 
 /* This is our hash table structure. Every dictionary has two of this as we
  * implement incremental rehashing, for the old to the new table. */
 typedef struct dictht {
-    dictEntry **table;
-    unsigned long size;
-    unsigned long sizemask;
-    unsigned long used;
+    dictEntry **table; //hash表中的数据，以key/value形式，通过单链表保存
+    unsigned long size; //桶个数
+    unsigned long sizemask; //size - 1，方便定位
+    unsigned long used; //实际保存的元素数
 } dictht;
 
 typedef struct dict {
-    dictType *type;
-    void *privdata;
+    dictType *type;  //哈希表节点指针数组(俗称桶,bucket)hash表的类型，可以是string，list等
+    void *privdata; //该hash表的一些private数据
     dictht ht[2];
     int rehashidx; /* rehashing not in progress if rehashidx == -1 rehashidx记录的实际上是rehash进行到的索引，比如如果rehash进行到第10个元素，那么rehashidx的值就为9。如果没有在进行rehash，rehashidex的值就为-1.*/
     int iterators; /* number of iterators currently running */
