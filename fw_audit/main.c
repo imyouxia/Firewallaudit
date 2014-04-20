@@ -315,7 +315,8 @@ int main(int argc, char * argv[])
 
 	rc = init_hash_dict();
 	if (rc == FAIL) exit(1);
-	
+
+	//完成ae_loop的初始化，使用了select	
 	ev_lp = ae_loop_init();
 	if (ev_lp == NULL) exit(1);
 
